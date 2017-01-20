@@ -14,16 +14,16 @@
 </head>
 
 <body>
-  <header id="mainHeader">
+  <header id="mainHeader" class="mainComponent">
+    <div id="fixedHeader"></div>
     <div id="title">
       <div id="name">
         <h1 class="heading">Spencer Collins</h1>
       </div>
     </div>
-    <!-- <img id="silhouette" alt="An Interactive Resume" src="tempSilhouette.jpg"> -->
   </header>
   
-  <div id="content">
+  <div id="content" class="mainComponent">
     <!-- BANNER -->
     <section id="bannerSection">
       <div id="banner" class="container">
@@ -192,7 +192,7 @@
     </section>
   </div>
   
-  <div id="footer">
+  <div id="footer" class="mainComponent">
     <div class="container-fluid text-center">
 	  <h3>Thank you for stopping by.</h3>
 	  <h5>(Also, check out my links to see some more of what I've done!)</h5>
