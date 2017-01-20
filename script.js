@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
 	var lastId,
-	    menu = $("#mainHeader"),
+	    menu = $("#banner"),
 	    offsetHeight = $("#banner").outerHeight(),
 	    menuItems = menu.find("a[href^='#']"),
 	    contentItems = menuItems.map(function(){
@@ -18,7 +18,7 @@ $(document).ready(function() {
   		event.preventDefault();
 	});
 	
-	var scroll = ($(window).scrollTop() > $(window).height()/2) ? true : false;
+//	var scroll = ($(window).scrollTop() > $(window).height()/2) ? true : false;
 	
 	$(window).scroll(function() {
 		var hdr = $(window).height()/2,
@@ -38,20 +38,28 @@ $(document).ready(function() {
 			.end().filter("[href='#"+id+"']").parent().addClass("active");
 		}
 		
-		if ($(window).scrollTop() > hdr) {
-			if(scroll){
-				$("#content").css("width", '80%');
-				$("#mainHeader").animate({width: '20%'}, 200);
-				$("#banner ul").animate({width: '100%'}, 200);
-			}
-			scroll = false;
+		if (fromTop > $(window).height()){
+			$("#banner").addClass("sticky");
+			$("#banner").attr("style", "position: fixed");
 		} else {
-			if(!scroll){
-				$("#content").css("width", '70%');
-				$("#mainHeader").animate({width: '30%'}, 200);
-				$("#banner ul").animate({width: '50%'}, 200);
-			}
-			scroll = true;
+			$("#banner").removeClass("sticky");
+			$("#banner").attr("style", "position: absolute");
 		}
+		
+//		if ($(window).scrollTop() > hdr) {
+//			if(scroll){
+//				$("#content").css("width", '80%');
+//				$("#mainHeader").animate({width: '20%'}, 200);
+//				$("#banner ul").animate({width: '100%'}, 200);
+//			}
+//			scroll = false;
+//		} else {
+//			if(!scroll){
+//				$("#content").css("width", '70%');
+//				$("#mainHeader").animate({width: '30%'}, 200);
+//				$("#banner ul").animate({width: '50%'}, 200);
+//			}
+//			scroll = true;
+//		}
 	});
 });

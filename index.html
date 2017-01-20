@@ -9,110 +9,166 @@
 <title>Spencer Collins</title>
 </head>
 <body>
-  <div id="banner">
-    <header id="mainHeader">
-      <div class="title">
-        <a href=""> <img src="SC.png" id="logo"></a>
-        <h1>
-          <a href="#banner">Spencer&nbsp;Collins</a>
-        </h1>
-      </div>
-      <ul id="menu">
-        <li><a href="#profile">Profile</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </header>
-  </div>
+  <header id="mainHeader">
+    <div class="title">
+      <img src="SC.png" id="logo">
+      <img src="SpencerCollinsSignature.png" id="headerName">
+    </div>
+  </header>
   <div id="content">
-    <div id="profile" class="contentArea">
-      <header>
-        <h1>Profile</h1>
-      </header>
-      <div>
-        <p>Hello!</p>
-        <p>&nbsp;</p>
-        <p>I'm Spencer Collins.</p>
-        <div id="profilePicture"><img src="Spencer007(666x1000).jpg"></div>
-        <p>I am a student at UNL.</p>
-        <p>I've done some pretty neat stuff.</p>
-        <p>&nbsp;</p>
-        <p>Thanks for checking me out.</p>
-        <p>&nbsp;</p>
-        <p>Yours,</p>
-        <p>&nbsp;</p>
-        <h4 id="signature">Spencer&nbsp;G.&nbsp;Collins</h4>
-      </div>
-    </div>
-    <div id="resume" class="contentArea">
-      <header>
-        <h1>Resume</h1>
-      </header>
-      <embed id="resumeImage" type='image/png' src="Spencer Collins Resume.png"
-        width="100%"></embed>
-      <p></p>
-      <a href="Spencer Collins Resume.pdf" class="button"><span class="genericon genericon-print"></span>  Printable Version</a>
-    </div>
-    <div id="contact" class="contentArea">
-      <header>
-        <h1>Contact</h1>
-      </header>
-      <div class="contactForm">
-        <div class="formShell">
-          <form action="#">
-            <div class="row">
-              <div class="column splitColumn">
-                <div class="fieldShell">
-                  <input type="text" name="fields[first_name]"
-                    placeholder="First Name" style="cursor: auto;">
-                </div>
-              </div>
-              <div class="column splitColumn">
-                <div class="fieldShell">
-                  <input type="text" name="fields[last_name]"
-                    placeholder="Last Name">
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="column">
-                <div class="fieldShell">
-                  <input type="email" name="fields[email]" placeholder="Email">
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="column">
-                <div class="fieldShell">
-                  <input type="text" name="fields[subject]"
-                    placeholder="Subject">
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="column">
-                <div class="fieldShell">
-                  <textarea name="fields[message]" placeholder="Message"
-                    rows="3" cols="50"></textarea>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="column splitColumn">
-                <div class="fieldShell">
-                  <input type="submit" name="fields[send]" value="Send">
-                </div>
-              </div>
-              <div class="column splitColumn">
-                <div class="fieldShell">
-                  <input type="reset" name="fields[reset]" value="Reset">
-                </div>
-              </div>
-            </div>
-          </form>
+    <section id="bannerSection">
+      <div id="banner">
+        <div id="bannerContainer">
+          <a href=""><img src="SpencerCollinsSignature.png"></a>
+          <ul id="menu">
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
       </div>
-    </div>
+    </section>
+    
+    <section id="aboutme">
+      <div class="dark">
+        <div class="container">
+          <div class="row top bottom">
+            <div class="column col-4 right roundImageCol">
+              <div id="profilePicture" class="roundImage"><img src="Spencer007(666x1000).jpg"></div>
+            </div>
+            <div class="column text250">
+              <p>This is me. I'm Spencer Collins.&nbsp;</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dark">
+        <div class="container">
+          <div class="row top bottom">
+            <div class="column col-2"><p>&nbsp;</p></div>
+            <div class="column col-6 text250">
+              <p>I am currently studying <strong>Software Engineering</strong> at the University of Nebraska-Lincoln through the <strong>Jeffrey S. Raikes School of Computer Science &amp; Management</strong>.</p>
+            </div>
+            <div class="column noFloat roundImageCol">
+              <div class="roundImage"><img src="UNL.svg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dark">
+        <div class="container">
+          <div class="row top bottom">
+            <div class="column col-4 right roundImageCol">
+              <div id="hikingPicture" class="roundImage"><img src="Hiking.jpg"></div>
+            </div>
+            <div class="column col-8 text250">
+              <p>I am an <strong>Eagle Scout</strong> and have a great love and appreciation for the outdoors.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dark">
+        <div class="container">
+          <div class="row top bottom">
+            <div class="column col-4 roundImageCol right">
+              <div id="cmbPicture" class="roundImage"><img src="UNL_CMB.jpg"></div>
+            </div>
+            <div class="column col-4 text250">
+              <p>I am a member of the <strong>Cornhusker Marching Band</strong> and <strong>Big Red Express Pep Band</strong>.
+              <br><br>I have also had the opportunity to march and play lead trumpet for the <strong>Colts Drum &amp; Bugle Corps</strong>.</p>
+            </div>
+            <div class="column col-4 roundImageCol">
+              <div id="coltsPicture" class="roundImage"><img src="ColtsParade.jpg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <section>
+      <div id="experience" class="container">
+        <h1>Experience</h1>
+        <div class="row top bottom">
+          <div class="column col-2"><p>&nbsp;</p></div>
+          <div class="column col-8 vertical">
+            <p>In the summer of 2016, I had the opportunity to be a Software Developer Intern at Baldwin, Hackett, &amp; Meeks, Inc.  There, I worked on and helped create a python based code generator to simplify a repetitive code-creating process, while also helping minimize human errors.</p>
+            <h2>Coding Languages</h2>
+          </div>
+          <div class="column col-2"><p>&nbsp;</p></div>
+        </div>
+      </div>
+    </section>
+    
+    <section>
+      <div id="resume" class="container">
+        <h1>Resume</h1>
+        <embed id="resumeImage" type='image/png' src="Spencer Collins Resume.png"
+          width="100%"></embed>
+        <p></p>
+        <a href="Spencer Collins Resume.pdf" class="button"><span class="genericon genericon-print"></span>  Printable Version</a>
+      </div>
+    </section>
+    <section>  
+      <div id="contact" class="container">
+        <h1>Contact</h1>
+        <div class="contactForm">
+          <div class="formShell">
+            <form action="#">
+              <div class="row">
+                <div class="column splitColumn">
+                  <div class="fieldShell">
+                    <input type="text" name="fields[first_name]"
+                      placeholder="First Name" style="cursor: auto;">
+                  </div>
+                </div>
+                <div class="column splitColumn">
+                  <div class="fieldShell">
+                    <input type="text" name="fields[last_name]"
+                      placeholder="Last Name">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="column">
+                  <div class="fieldShell">
+                    <input type="email" name="fields[email]" placeholder="Email">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="column">
+                  <div class="fieldShell">
+                    <input type="text" name="fields[subject]"
+                      placeholder="Subject">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="column">
+                  <div class="fieldShell">
+                    <textarea name="fields[message]" placeholder="Message"
+                      rows="3" cols="50"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="column splitColumn">
+                  <div class="fieldShell">
+                    <input type="submit" name="fields[send]" value="Send">
+                  </div>
+                </div>
+                <div class="column splitColumn">
+                  <div class="fieldShell">
+                    <input type="reset" name="fields[reset]" value="Reset">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
   <div id="footer">
     <h3>Thank you for stopping by.</h3>
