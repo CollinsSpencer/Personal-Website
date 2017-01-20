@@ -129,9 +129,11 @@ h1 {
 }
 
 #banner ul li.active {
-    box-shadow: #444 0 -4px 0 0 inset;
-    /* border-bottom: #444 3px solid;
-    padding-bottom: calc(1em - 3px); */
+    box-shadow: #444 0 -8px 0 -4px inset;
+}
+
+#bannerInitials {
+	display: none;
 }
 
 #menu, #menuOpen {
@@ -169,7 +171,6 @@ h1 {
 }
 
 .row {
-	display: inline-block;
 	width: 100%;
 }
 
@@ -432,7 +433,8 @@ h1 {
 }
 
 #footer #socialMediaLinks>li:hover {
-    color:white;
+    color: white;
+    cursor: pointer;
 }
 
 #footer #socialMediaLinks>li>a {
@@ -442,6 +444,11 @@ h1 {
 
 #footer #socialMediaLinks>li>a>span {
 	font-size: inherit;
+}
+
+#footer #svg1 {
+	height: 1em;
+	vertical-align: top;
 }
 	
 
@@ -474,6 +481,14 @@ h1 {
     #banner ul.hide {
         display: none;
         width: 100%;
+    }
+    
+    #bannerName {
+        display: none;
+    }
+    
+    #bannerInitials {
+        display: block;
     }
 }
 
