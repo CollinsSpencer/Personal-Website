@@ -1,28 +1,33 @@
 
-$(document).ready(function() {
+$(document).ready(function(){
 	var lastId,
-	    menu = $("#banner"),
+	    menu = $("#banner ul"),
+	    menuButton = $("#menu"),
+	    menuOpen = false,
 	    offsetHeight = $("#banner").outerHeight(),
 	    menuItems = menu.find("a[href^='#']"),
 	    contentItems = menuItems.map(function(){
 	    	var item = $($(this).attr("href"));
 	    	if (item.length) { return item; }
 	    });
+	
+	function open(){
+		$("#bars").css("display", "none");
+		$("#collapse").css("display", "inline-block");
+		menu.removeClass("hide");
+		menuOpen = true;
+	}
+    
+    function close(){
+		$("#bars").css("display", "inline-block");
+		$("#collapse").css("display", "none");
+		menu.addClass("hide");
+		menuOpen = false;
+	}
 
-	menuItems.click(function(event){
-	  	var href = $(this).attr("href"),
-	  		offsetTop = href === "#" ? 0 : $(href).offset().top;
-  		$('html, body').stop().animate({ 
-  			scrollTop: offsetTop
-  		}, 300);
-  		event.preventDefault();
-	});
-	
-//	var scroll = ($(window).scrollTop() > $(window).height()/2) ? true : false;
-	
-	$(window).scroll(function() {
+    function scrollEffects(){
 		var hdr = $(window).height()/2,
-			fromTop = $(this).scrollTop(),
+			fromTop = $(window).scrollTop(),
 			scrolledPast = contentItems.map(function(){
 				if ($(this).offset().top < fromTop+150)
 					return this;
@@ -31,35 +36,43 @@ $(document).ready(function() {
 		var current = scrolledPast[scrolledPast.length-1];
 		var id = current && current.length ? current.attr("id") : "";
 		   
-		if (lastId !== id) {
+		if(lastId !== id){
 			lastId = id;
 			menuItems
 			.parent().removeClass("active")
 			.end().filter("[href='#"+id+"']").parent().addClass("active");
 		}
 		
-		if (fromTop > $(window).height()){
+		if(fromTop > $(window).height()){
 			$("#banner").addClass("sticky");
 			$("#banner").attr("style", "position: fixed");
 		} else {
 			$("#banner").removeClass("sticky");
 			$("#banner").attr("style", "position: absolute");
 		}
-		
-//		if ($(window).scrollTop() > hdr) {
-//			if(scroll){
-//				$("#content").css("width", '80%');
-//				$("#mainHeader").animate({width: '20%'}, 200);
-//				$("#banner ul").animate({width: '100%'}, 200);
-//			}
-//			scroll = false;
-//		} else {
-//			if(!scroll){
-//				$("#content").css("width", '70%');
-//				$("#mainHeader").animate({width: '30%'}, 200);
-//				$("#banner ul").animate({width: '50%'}, 200);
-//			}
-//			scroll = true;
-//		}
+	}
+    
+	menuItems.click(function(event){
+	  	if(menuOpen){
+	  		close();
+	  	}
+		var href = $(this).attr("href"),
+	  		offsetTop = href === "#" ? 0 : $(href).offset().top - $("#banner").outerHeight();
+  		$('html, body').stop().animate({ 
+  			scrollTop: offsetTop
+  		}, 300);
+  		event.preventDefault();
 	});
+	
+	menuButton.click(function(event){
+		if(menuOpen){
+			close();
+		} else {
+			open();
+		}
+	});
+	
+	scrollEffects();
+	
+	$(window).scroll(scrollEffects);
 });

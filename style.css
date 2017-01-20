@@ -24,6 +24,7 @@ header {
 	text-align: center;
 	width: 100%;
 	height: 100%;
+	font-family: 'Oswald', Arial, Sans-serif;
 }
 
 header .titleScrolled {
@@ -47,13 +48,41 @@ header .titleScrolled {
     float: left;
 }
 
+#headerTitle {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#title {
+	color: #d00000;
+	text-transform: uppercase;
+	width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 0;
+    position: absolute;
+    bottom: 0;
+}
+
+#name {
+    font-size: 120px;
+    line-height: 110px;
+    letter-spacing: -4px;
+}
+
+h1 {
+	font-size: 100%;
+	font-weight: normal;
+	margin: 0;
+}
+
 /* BANNER */
 #bannerSection {
 	margin-bottom: 3em;
 }
 
 #banner {
-	background-color: rgba(255, 255, 255, .9);
+	background-color: rgba(255, 255, 255, .8);
 	z-index: 5;
 	width: 100%;
 	position: absolute;
@@ -82,6 +111,7 @@ header .titleScrolled {
     margin: 0 10px 0 0;
     font-size: inherit;
     float: right;
+    display: block;
 }
 
 #banner li > a {
@@ -99,7 +129,19 @@ header .titleScrolled {
 }
 
 #banner ul li.active {
-    border-bottom: #444 3px solid;
+    box-shadow: #444 0 -4px 0 0 inset;
+    /* border-bottom: #444 3px solid;
+    padding-bottom: calc(1em - 3px); */
+}
+
+#menu, #menuOpen {
+	display: none;
+	float: right;
+	padding: 1em;
+}
+
+#menu:hover, #menuOpen:hover {
+	cursor: pointer;
 }
 
 .sticky {
@@ -114,7 +156,7 @@ header .titleScrolled {
 #content {
 	vertical-align: baseline;
 	overflow-x: hidden;
-	background-color: grey;
+	background-color: #444;
 }
 
 .container {
@@ -129,6 +171,20 @@ header .titleScrolled {
 .row {
 	display: inline-block;
 	width: 100%;
+}
+
+.narrow {
+	max-width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+	display: flex;
+}
+
+.mid {
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
 }
 
 .top {
@@ -182,17 +238,48 @@ header .titleScrolled {
     text-align: right;
 }
 
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
 .noFloat {
 	float: none;
 }
 
+.heading {
+	font-family: 'Oswald', Arial, Sans-serif;
+	color: #d00000;
+    text-transform: uppercase;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 0;
+    font-size: 120px;
+    line-height: 110px;
+    letter-spacing: -4px;
+}
+
+.loud {
+	font-weight: bold;
+	font-style: italic;
+}
+
 /* ABOUT ME */
-#aboutme .dark {
+.dark {
     background-color: #444;
     color: #ddd;
 }
 
-#aboutme .light {
+.darkish {
+    background-color: #777;
+    color: #eee;
+}
+
+.light {
     background-color: #ddd;
     color: #444;
 }
@@ -203,6 +290,7 @@ header .titleScrolled {
 
 #aboutme p {
 	margin: auto 15px;
+	width: 100%
 }
 
 /* PROFILE */
@@ -298,6 +386,10 @@ header .titleScrolled {
     width: 50%;
 }
 
+.contactForm .fieldShell {
+	width: 100%;
+}
+
 .contactForm .fieldShell input, .fieldShell textarea {
 	width: 100%;
 	max-width: 100%;
@@ -352,4 +444,46 @@ header .titleScrolled {
 	font-size: inherit;
 }
 	
+
+
+/* MEDIA SCREENS */
+
+@media screen and (max-width: 1280px) {
+    #name, .heading {
+        font-size: 120px;
+        line-height: 110px;
+        letter-spacing: -3px;
+    }
+    
+    #banner ul {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    #name, .heading {
+        font-size: 90px;
+        line-height: 80px;
+        letter-spacing: -2px;
+    }
+    
+    #menu {
+        display: inline-block;
+    }
+    
+    #banner ul.hide {
+        display: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #name, .heading {
+        font-size: 70px;
+        line-height: 60px;
+        letter-spacing: -1px;
+    }
+}
+
+
 

@@ -1,0 +1,24 @@
+Computer-Related Work Experience
+In the summer of 2016, I had the opportunity to be a Software Developer Intern at Baldwin, Hackett, &amp; Meeks, Inc.  There, I worked on and helped create a python based code generator to simplify a repetitive code-creating process, while also helping minimize human errors.
+Run-down of Languages I've Worked With
+
+My first experience with coding was in Liberty Basics from a Coding for Dummies book in elementary school.
+In middle school, I learned just enough of Java and Python to do all of the problems on CodingBat.com.
+I took two web development classes in high school where I learned enough about HTML and CSS to make usable and aesthetically pleasing static websites.
+On my own, I learned jQuery in order to make more flexible and appealing webpages.
+In high school, I also took a Java course as well as AP Computer Science where I really learned the ins-and-outs of my first main programming language.
+My internship at BHMI following my senior year was my first exposure to C++, SQL, OracleDB, and a real work environment implementing the agile approach.
+The project that I worked on at BHMI was entirely in Python, where I helped create a code generator to simplify a repetitive code-creating process, while also helping minimize human errors.
+At UNL, I have learned both C and more Java in an advanced, honors computer science course.
+Currently, I am in an advanced, honors computer science course where we will cover PHP, data representation, EDI, reports, database design, SQL, JDBC, database connectivity, data manipulations, and discrete math.
+I will also learn Swift and create an app for iOS devices through an iOS Development course.
+
+Goals and Ambitions
+My ultimate goal is to be the CTO of a company that always has the desire to make an impact on the world.
+Along the way, I want to be a software engineer that both helps write the code that goes into the product and that leads a team of colleagues to be productive.
+
+What Sets Me Apart
+I have a desire to be more. I surround myself with people and programs that constantly challenge and push me to become a better version of myself.
+Being a student in the Raikes School of Computer Science and Management means that I will live in the same building and take the same classes as a group of extremely bright students--the average ACT score being above 33.
+Through specially developed classes and by merging Computer Science and Business, we are able to bounce more radical, unique ideas around--creating innovation.
+By marching with the Colts sDrum & Bugle Corps, I have been exposed to extreme levels of stress (14+ hours of physical, mental, and emotional stress for 80 days straight) all while pushing for perfection (DCI is the professional level of marching band; we performed an 11 minute show 30 times, which can be more easily visualized as running for 11 minutes while breathing through a straw...and being expected to place every step a matter of inches from where you did the last 100 times).
