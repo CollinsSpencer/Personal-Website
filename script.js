@@ -14,14 +14,14 @@ $(document).ready(function(){
 	function open(){
 		$("#bars").css("display", "none");
 		$("#collapse").css("display", "inline-block");
-		menu.removeClass("hide");
+		menu.addClass("show");
 		menuOpen = true;
 	}
     
     function close(){
 		$("#bars").css("display", "inline-block");
 		$("#collapse").css("display", "none");
-		menu.addClass("hide");
+		menu.removeClass("show");
 		menuOpen = false;
 	}
 
