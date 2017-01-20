@@ -3,52 +3,133 @@
 
 <head>
 <link rel="stylesheet" type="text/css" href="style.css">
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+<link rel="stylesheet" type="text/css" href="genericons/genericons.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script type="text/javascript" src="script.js"></script>
 <title>Spencer Collins</title>
 </head>
 <body>
-	<div id="page">
-		<div id="sidebar">
-			<header>
-				<div id="branding">
-					<a href="">
-						<img src="SC.png" id="logo">
-					</a>
-				</div>
-			</header>
-			<ul>
-				<li>Welcome</li>
-				<li>Resume</li>
-				<li>Contact</li>
-			</ul>
-		</div>
-		<div id="content">
-			<div id="title">
-				<h1>Spencer&nbsp;Collins</h1>
-			</div>
-			
-			<div id="welcome" class="contentArea">
-				<h1>Welcome</h1>
-				<div>
-					<p>Hello!</p>
-					<p>&nbsp;</p>
-					<p>I'm Spencer Collins.</p>
-					<p>I am a student at UNL.</p>
-					<p>I've done some pretty neat stuff.</p>
-					<p>&nbsp;</p>
-					<p>Thanks for checking me out.</p>
-					<p>&nbsp;</p>
-					<p>Yours,</p>
-					<p>&nbsp;</p>
-					<h5 id="signature">Spencer&nbsp;G.&nbsp;Collins</h5>
-				</div>
-			</div>
-			<div class="contentArea">
-				<h1>Hello</h1>
-				<h2 id="swag">World!</h2>
-			</div>
-		</div>
-	</div>
+  <div id="banner">
+    <header id="mainHeader">
+      <div class="title">
+        <a href=""> <img src="SC.png" id="logo"></a>
+        <h1>
+          <a href="#banner">Spencer&nbsp;Collins</a>
+        </h1>
+      </div>
+      <ul id="menu">
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </header>
+  </div>
+  <div id="content">
+    <div id="profile" class="contentArea">
+      <header>
+        <h1>Profile</h1>
+      </header>
+      <div>
+        <p>Hello!</p>
+        <p>&nbsp;</p>
+        <p>I'm Spencer Collins.</p>
+        <div id="profilePicture"><img src="Spencer007(666x1000).jpg"></div>
+        <p>I am a student at UNL.</p>
+        <p>I've done some pretty neat stuff.</p>
+        <p>&nbsp;</p>
+        <p>Thanks for checking me out.</p>
+        <p>&nbsp;</p>
+        <p>Yours,</p>
+        <p>&nbsp;</p>
+        <h4 id="signature">Spencer&nbsp;G.&nbsp;Collins</h4>
+      </div>
+    </div>
+    <div id="resume" class="contentArea">
+      <header>
+        <h1>Resume</h1>
+      </header>
+      <embed id="resumeImage" type='image/png' src="Spencer Collins Resume.png"
+        width="100%"></embed>
+      <p></p>
+      <a href="Spencer Collins Resume.pdf" class="button"><span class="genericon genericon-print"></span>  Printable Version</a>
+    </div>
+    <div id="contact" class="contentArea">
+      <header>
+        <h1>Contact</h1>
+      </header>
+      <div class="contactForm">
+        <div class="formShell">
+          <form action="#">
+            <div class="row">
+              <div class="column splitColumn">
+                <div class="fieldShell">
+                  <input type="text" name="fields[first_name]"
+                    placeholder="First Name" style="cursor: auto;">
+                </div>
+              </div>
+              <div class="column splitColumn">
+                <div class="fieldShell">
+                  <input type="text" name="fields[last_name]"
+                    placeholder="Last Name">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="column">
+                <div class="fieldShell">
+                  <input type="email" name="fields[email]" placeholder="Email">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="column">
+                <div class="fieldShell">
+                  <input type="text" name="fields[subject]"
+                    placeholder="Subject">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="column">
+                <div class="fieldShell">
+                  <textarea name="fields[message]" placeholder="Message"
+                    rows="3" cols="50"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="column splitColumn">
+                <div class="fieldShell">
+                  <input type="submit" name="fields[send]" value="Send">
+                </div>
+              </div>
+              <div class="column splitColumn">
+                <div class="fieldShell">
+                  <input type="reset" name="fields[reset]" value="Reset">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <h3>Thank you for stopping by.</h3>
+    <div id="linksContainer">
+      <ul id="socialMediaLinks">
+        <li id="linkedIn">
+          <a href="https://www.linkedin.com/in/spencer-c-71b23484">
+            <span class="genericon genericon-linkedin-alt"></span>
+          </a>
+        </li>
+        <li id="gitHub">
+          <a href="">
+            <span class="genericon genericon-github"></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 <body>
 </html>
