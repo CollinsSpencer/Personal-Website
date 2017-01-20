@@ -13,12 +13,12 @@ a {
 /* HEADER */
 header {
 	content: "";
-	background-color: white;
-	background-image: url("tempSilhouette.jpg");
-	background-size: contain;
-	background-position: 100% 100%;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+	background: url(silhouette.jpg);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: transparent;
+    background-size: contain !important;
 	top: 0;
 	text-align: center;
 	width: 100%;
@@ -52,21 +52,13 @@ header .titleScrolled {
 	margin-left: auto;
 }
 
-#title {
-	color: #d00000;
-	text-transform: uppercase;
-	width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 50px 0;
-    position: absolute;
-    bottom: 0;
-}
-
 #name {
     font-size: 120px;
     line-height: 110px;
     letter-spacing: -4px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 h1 {
@@ -165,7 +157,7 @@ h1 {
 
 #banner ul li {
     padding: 1em 5px 1em 5px;
-    display: inline-block;
+    height: 3em;
 }
 
 #banner ul li.active {
@@ -272,6 +264,7 @@ h1 {
 	background-color: rgb(128,128,128);
 	color: white;
 	display: block;
+	padding-bottom: 20%;
 }
 
 #footer #socialMediaLinks {
