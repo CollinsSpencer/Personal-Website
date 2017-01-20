@@ -36,6 +36,7 @@
           <li class="active"><a href="#aboutme">About Me</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#resume">Resume</a></li>
+          <li><a href="#lookingForward">Looking Forward</a>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -103,10 +104,10 @@
         <div class="row text-center">
           <h1 class="heading">Experience</h1>
         </div>
-        <div class="row top bottom mid">
+        <div class="row bottom mid">
           <div class="column col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
             <h2>Computer-Related Work Experience</h2>
-            <p>In the summer of 2016, I had the opportunity to be a Software Developer Intern at Baldwin, Hackett, &amp; Meeks, Inc.  There, I worked on and helped create a python based code generator to simplify a repetitive code-creating process, while also helping minimize human errors.</p>
+            <p>In the summer of 2016, I had the opportunity to be a Software Developer Intern at Baldwin Hackett &amp; Meeks, Inc.  There, I worked on and helped create a python based code generator to simplify a repetitive code-creating process, while also helping minimize human errors.</p>
             <h2>Run-down of Languages I've Worked With</h2>
             <p>My first experience with coding was in <b>Liberty Basics</b> from a Coding for Dummies book in elementary school.</p>
             <p>In middle school, I learned just enough of <b>Java</b> and <b>Python</b> to do all of the problems on CodingBat.com.</p>
@@ -118,21 +119,6 @@
             <p>At UNL, I have learned both <b>C</b> and more <b>Java</b> in an advanced, honors computer science course.</p>
             <p>Currently, I am in an advanced, honors computer science course where we will cover <b>PHP</b>, data representation, EDI, reports, database design, <b>SQL</b>, JDBC, database connectivity, data manipulations, and discrete math.</p>
             <p>This semester, I will also be learning <b>Swift</b> and create an app for iOS devices through an iOS Development course.</p>
-            <h2>What Sets Me Apart</h2>
-            <p class="loud">I have a desire to be more. I surround myself with people and programs that constantly challenge and push me to become a better version of myself.</p>
-            <p>Being a student in the Raikes School of Computer Science and Management means that I will live in the same building and take the same classes as a group of <b>extremely bright</b> students--the average ACT score being above 33.</p>
-            <p>Through specially developed classes and by merging Computer Science and Business, we are able to bounce more <b>radical, unique ideas</b> around--creating innovation.</p>
-            <p>By marching with the Colts Drum &amp; Bugle Corps, I have been exposed to extreme levels of stress (14+ hours of physical, mental, and emotional stress for 80 days straight) all while <b>driving for perfection</b> (DCI is the professional level of marching band; we performed an 11 minute show 30 times, which can be more easily visualized as running for 11 minutes while breathing through a straw...and being expected to place every step a matter of inches from where you did the last 100 times).</p>
-          </div>
-        </div>
-      </div>
-      <div class="darkish container-fluid">
-        <div class="row top bottom">
-          <div class="column col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-            <h2>Goals and Ambitions</h2>
-            <p>My ultimate goal is to be the CTO of a company that always has the desire to make an impact on the world.</p>
-            <p>Along the way, I want to be a software engineer that both helps write the code that goes into the product and that leads a team of colleagues to be productive.</p>
-            <p>My professional short-term goals are to gain experience through internships and in my free time learn how to create a dynamic website, complete with a MySQL database.</p>
           </div>
         </div>
       </div>
@@ -154,9 +140,35 @@
       </div>
     </section>
     
+    <!-- LOOKING FORWARD -->
+    <section id="lookingForward">
+      <div class="light container-fluid">
+        <div class="row text-center">
+          <h1 class="heading">Looking Forward</h1>
+        </div>
+        <div class="row mid">
+          <div class="column col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+            <h2>What Sets Me Apart</h2>
+            <p class="loud">I have a desire to be more. I surround myself with people and programs that constantly challenge and push me to become a better version of myself.</p>
+            <p>Being a student in the Raikes School of Computer Science and Management means that I will live in the same building and take the same classes as a group of <b>extremely bright</b> students--the average ACT score being above 33.</p>
+            <p>Through specially developed classes and by merging Computer Science and Business, we are able to bounce more <b>radical, unique ideas</b> around--creating innovation.</p>
+            <p>By marching with the Colts Drum &amp; Bugle Corps, I have been exposed to extreme levels of stress (14+ hours of physical, mental, and emotional stress for 80 days straight) all while <b>driving for perfection</b> (DCI is the professional level of marching band; we performed an 11 minute show 30 times, which can be more easily visualized as running for 11 minutes while breathing through a straw...and being expected to place every step a matter of inches from where you did the last 100 times).</p>
+          </div>
+        </div>
+        <div class="row bottom">
+          <div class="column col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+            <h2>Goals and Ambitions</h2>
+            <p>My ultimate goal is to be the CTO of a company that always has the desire to make an impact on the world.</p>
+            <p>Along the way, I want to be a software engineer that both helps write the code that goes into the product and that leads a team of colleagues to be productive.</p>
+            <p>My professional short-term goals are to gain experience through internships and in my free time learn how to create a dynamic website, complete with a MySQL database.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
     <!-- CONTACT -->
     <section id="contact">  
-      <div class="light container-fluid">
+      <div class="darkish container-fluid">
         <div class="row text-center">
           <h1 class="heading">Contact Me</h1>
           <h3>I apologize, but this form is not functional quite yet.</h3>
@@ -192,7 +204,7 @@
     </section>
   </div>
   
-  <div id="footer" class="mainComponent">
+  <div id="footer" class="darkish mainComponent">
     <div class="container-fluid text-center">
 	  <h3>Thank you for stopping by.</h3>
 	  <h5>(Also, check out my links to see some more of what I've done!)</h5>
