@@ -1,15 +1,3 @@
-//$.fn.extend({
-//    zigzag: function () {
-//        var text = $(this).text();
-//        var zigzagText = '';
-//        var toggle = true; //lower/uppper toggle
-//			$.each(text, function(i, nome) {
-//				zigzagText += (toggle) ? nome.toUpperCase() : nome.toLowerCase();
-//				toggle = (toggle) ? false : true;
-//			});
-//	return zigzagText;
-//    }
-//});
 
 $(document).ready(function() {
 	var lastId,
@@ -45,7 +33,6 @@ $(document).ready(function() {
 		   
 		if (lastId !== id) {
 			lastId = id;
-			// Set/remove active class
 			menuItems
 			.parent().removeClass("active")
 			.end().filter("[href='#"+id+"']").parent().addClass("active");
@@ -54,7 +41,6 @@ $(document).ready(function() {
 		if ($(window).scrollTop() > hdr) {
 			if(scroll){
 				$("#content").css("width", '80%');
-				$("#content").css("marginLeft", '20%');
 				$("#mainHeader").animate({width: '20%'}, 200);
 				$("#banner ul").animate({width: '100%'}, 200);
 			}
@@ -62,7 +48,6 @@ $(document).ready(function() {
 		} else {
 			if(!scroll){
 				$("#content").css("width", '70%');
-				$("#content").css("marginLeft", '30%');
 				$("#mainHeader").animate({width: '30%'}, 200);
 				$("#banner ul").animate({width: '50%'}, 200);
 			}

@@ -17,7 +17,7 @@ a {
 	background-color: white;
 	background-image: url("tempSilhouette.jpg");
 	background-size: contain;
-	background-position: 100% 30%;
+	background-position: 100% 100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	height: 100%;
@@ -26,6 +26,7 @@ a {
 
 #banner header {
 	width: 30%;
+	min-width: 265px;
 	position: fixed;
 	top: 20%;
 	text-align: center;
@@ -90,10 +91,10 @@ a {
 
 /* CONTENT */
 #content {
-	max-width: 80%;
+	max-width: calc(100% - 265px);
 	width: 70%;
 	vertical-align: baseline;
-	margin-left: 30%;
+	margin-left: auto;
 	box-sizing: inherit;
 	padding: 20px 0;
 	overflow-x: hidden;
