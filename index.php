@@ -175,27 +175,27 @@
         </div>
         <div class="row bottom">
           <div class="column col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
-            <form id="contactForm" method="post" action="contact.php">
+            <form id="contactForm" method="post" action="">
               <div class="col-xs-6">
-                <input class="form-control" type="text" name="fields[first_name]" placeholder="First Name">
+                <input id="firstName" class="form-control" type="text" name="fields[first_name]" placeholder="First Name">
               </div>
               <div class="col-xs-6">
-                <input class="form-control" type="text" name="fields[last_name]" placeholder="Last Name">
+                <input id="lastName" class="form-control" type="text" name="fields[last_name]" placeholder="Last Name">
               </div>
               <div class="col-xs-12">
-                <input class="form-control" type="email" name="fields[email]" placeholder="Email">
+                <input id="email" class="form-control" type="email" name="fields[email]" placeholder="Email">
               </div>
               <div class="col-xs-12">
-                <input class="form-control" type="text" name="fields[subject]" placeholder="Subject">
+                <input id="subject" class="form-control" type="text" name="fields[subject]" placeholder="Subject">
               </div>
               <div class="col-xs-12">
-                <textarea class="form-control" name="fields[message]" placeholder="Message" rows="3" cols="50"></textarea>
+                <textarea id="message" class="form-control" name="fields[message]" placeholder="Message" rows="3" cols="50"></textarea>
               </div>
               <div class="col-xs-6">
-                <input class="form-control" type="submit" name="fields[send]" value="Send">
+                <input id="submit" class="form-control" type="submit" name="fields[send]" value="Send">
               </div>
               <div class="col-xs-6">
-                <input class="form-control" type="reset" name="fields[reset]" value="Reset">
+                <input id="reset" class="form-control" type="reset" name="fields[reset]" value="Reset">
               </div>
             </form>
           </div>

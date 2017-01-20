@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
 	var lastId,
 	    menu = $("#banner ul"),
@@ -75,4 +74,30 @@ $(document).ready(function(){
 	scrollEffects();
 	
 	$(window).scroll(scrollEffects);
+	
+	$("#submit").click(function(){
+		var firstName = $("#firstName").val();
+		var lastName = $("#lastName").val();
+		var email = $("#email").val();
+		var subject = $("#subject").val();
+		var message = $("#message").val();
+		var dataString = 'firstName='+firstName + '&lastName='+lastName + '&email='+email + '&subject='+subject + "&message="+message;
+		alert(dataString);
+		// Check for valid fields
+		if(firstName==''||lastName==''||email==''||subject==''||message=='') {
+			alert("Please Fill All Fields");
+		} else {
+			// AJAX Code To Submit Form.
+			$.ajax({
+				type: "post",
+				url: "contact.php",
+				data: dataString,
+				cache: false,
+				success: function(){
+					alert('Your message has been sent.');
+				}
+			});
+		}
+		return false;
+	});
 });
