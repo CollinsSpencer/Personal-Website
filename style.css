@@ -1,0 +1,110 @@
+html, body {
+	margin: 0;
+	min-height: 100%;
+	font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+	height: 100%;
+	overflow-y: scroll;
+}
+
+body {
+	display: block;
+}
+
+body:before {
+	content: "";
+	background-image: url("Spencer007(666x1000).jpg");
+	background-size: cover;
+	background-position: 100% 30%;
+	background-repeat: no-repeat;
+	height: 100%;
+	position: fixed;
+	width: calc(50% - 158px);
+	display: block;
+}
+
+#page:before {
+	content: "";
+	clear: both;
+	display: table;
+	clear: both;
+}
+
+#page {
+	margin: 0 auto;
+	max-width: 1000px;
+	min-height: 300px;
+	display: block;
+	vertical-align: baseline;
+}
+
+#page:after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+#sidebar {
+	position: fixed;
+	float: left;
+	max-width: 35%;
+	width: 35%;
+	margin-right: -100%;
+}
+
+header {
+	margin: 10% 0;
+	padding: 0 10%;
+}
+
+#branding {
+	position: relative;
+}
+
+#logo {
+	max-width: 125px;
+	margin: 0 0 0 auto;
+	display: block;
+}
+
+#sidebar ul {
+	color: darkgrey;
+	list-style: none;
+	margin: 0 0 0 25%;
+	text-align: right;
+}
+
+#sidebar ul li {
+	border-bottom: black 1px solid;
+	padding: 3px 15px 3px 0;
+}
+
+
+#content {
+	float: left;
+	width: 65%;
+	vertical-align: baseline;
+	margin-left: 35%;
+	box-sizing: inherit;
+}
+
+#title {
+	margin: 10% 0;
+	font-size: 35px;
+	text-align: center;
+}
+
+.contentArea {
+	margin: 20px 40px;
+	padding: 20px 40px;
+	background-color: white;
+	display: block;
+}
+
+#signature {
+	text-align: right;
+	padding-right: 25%;
+}
+
+p {
+	line-height: 100%;
+}
