@@ -80,9 +80,8 @@ $(document).ready(function(){
 		var lastName = $("#lastName").val();
 		var email = $("#email").val();
 		var subject = $("#subject").val();
-		var message = $("#message").val();
+		var message = $("#message").val().replace(/\n/g, '<br />');
 		var dataString = 'firstName='+firstName + '&lastName='+lastName + '&email='+email + '&subject='+subject + "&message="+message;
-		alert(dataString);
 		// Check for valid fields
 		if(firstName==''||lastName==''||email==''||subject==''||message=='') {
 			alert("Please Fill All Fields");

@@ -58,7 +58,7 @@
         <div class="container">
           <div class="row">
             <div class="column col-sm-5 text-left-sm roundImageCol image-right">
-              <div class="roundImage"><img src="UNL.svg"></div>
+              <div class="roundImage"><img src="nebraska.svg"></div>
             </div>
             <div class="column col-sm-7 text-right-sm text250">
               <p>I am currently studying <strong>Software Engineering</strong> at the University of Nebraska-Lincoln through the <strong>Jeffrey S. Raikes School of Computer Science &amp; Management</strong>.</p>
@@ -130,8 +130,11 @@
         <div class="row text-center">
           <h1 class="heading">Resume</h1>
         </div>
-        <embed id="resumeImage" type='image/png' src="Spencer Collins Resume.png"
-          width="100%"></embed>
+        <div class="row">
+        	<div class="column col-sm-6 col-sm-offset-3 text-center" id="resumeImage">
+    	    	<img src="Spencer Collins Resume.png">
+        	</div>
+        </div>
         <div class="row right bottom">
           <div class="column col-sm-4 col-sm-offset-4 text-center">
             <a href="Spencer Collins Resume.pdf" class="button"><span class="genericon genericon-print"></span>  Printable Version</a>
@@ -150,16 +153,16 @@
           <div class="column col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
             <h2>What Sets Me Apart</h2>
             <p class="loud">I have a desire to be more. I surround myself with people and programs that constantly challenge and push me to become a better version of myself.</p>
-            <p>Being a student in the Raikes School of Computer Science and Management means that I will live in the same building and take the same classes as a group of <b>extremely bright</b> students--the average ACT score being above 33.</p>
+            <p>Being a student in the Raikes School of Computer Science and Management means that I live in the same building and take the same classes as a group of <b>extremely bright</b> students--the average ACT score being above 33.</p>
             <p>Through specially developed classes and by merging Computer Science and Business, we are able to bounce more <b>radical, unique ideas</b> around--creating innovation.</p>
-            <p>By marching with the Colts Drum &amp; Bugle Corps, I have been exposed to extreme levels of stress (14+ hours of physical, mental, and emotional stress for 80 days straight) all while <b>driving for perfection</b> (DCI is the professional level of marching band; we performed an 11 minute show 30 times, which can be more easily visualized as running for 11 minutes while breathing through a straw...and being expected to place every step a matter of inches from where you did the last 100 times).</p>
+            <p>By marching with the Colts Drum &amp; Bugle Corps, I have been exposed to extreme levels of stress (14+ hours of physical, mental, and emotional stress for 80 days straight) all while <b>striving for perfection</b>.</p>
           </div>
         </div>
         <div class="row bottom">
           <div class="column col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
             <h2>Goals and Ambitions</h2>
             <p>My ultimate goal is to be the CTO of a company that always has the desire to make an impact on the world.</p>
-            <p>Along the way, I want to be a software engineer that both helps write the code that goes into the product and that leads a team of colleagues to be productive.</p>
+            <p>Along the way, I want to be a software engineer that both helps write the code that goes into the product and that leads a team of colleagues to be productive and successful.</p>
             <p>My professional short-term goals are to gain experience through internships and in my free time learn how to create a dynamic website, complete with a MySQL database.</p>
           </div>
         </div>
@@ -169,11 +172,11 @@
     <!-- CONTACT -->
     <section id="contact">  
       <div class="darkish container-fluid">
-        <div class="row text-center">
+        <div class="row bottom text-center">
           <h1 class="heading">Contact Me</h1>
-          <h3>I apologize, but this form is not functional quite yet.</h3>
+          <h4>If you have any questions or would like to get in contact with me, feel free to use the following form.</h4>
         </div>
-        <div class="row bottom">
+        <div class="row">
           <div class="column col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
             <form id="contactForm" method="post" action="">
               <div class="col-xs-6">
@@ -200,14 +203,19 @@
             </form>
           </div>
         </div>
+        <div class="row bottom text-center">
+        	<h5>You will also receive a copy of your message.</h5>
+        </div>
       </div>
     </section>
   </div>
   
-  <div id="footer" class="darkish mainComponent">
+  <div id="footer" class="dark mainComponent">
     <div class="container-fluid text-center">
-	  <h3>Thank you for stopping by.</h3>
-	  <h5>(Also, check out my links to see some more of what I've done!)</h5>
+	  <div class="row top">
+		  <h2>Thank you for stopping by.</h2>
+		  <h5>(Also, check out my links to see some more of what I've done!)</h5>
+	  </div>
 	  <div id="row">
 	    <ul id="socialMediaLinks">
 	      <li id="linkedIn">
@@ -227,7 +235,12 @@
 	      </li>
 	      <li id="unl">
 	        <a href="http://cse.unl.edu/~scollins/">
-	          <img id="svg1" src="Nebraska_Cornhuskers_logo.svg" />
+	          <img id="svg1" src="unl.svg" />
+	        </a>
+	      </li>
+	      <li id="meritpages">
+	        <a href="http://meritpages.com/CollinsSpencer">
+	          <img src="MeritPages.png" />
 	        </a>
 	      </li>
 	    </ul>

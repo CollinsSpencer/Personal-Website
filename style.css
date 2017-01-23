@@ -238,10 +238,13 @@ h1 {
 
 /* resume */
 #resume #resumeImage {
-	max-width: 600px;
-	margin: 20px auto;
-	display: block;
+	margin-bottom: 20px;
+	padding: 0;
 	box-shadow: 1px 2px 12px -1px rgb(128,128,128);
+}
+
+#resumeImage img {
+	width: 100%;
 }
 
 #resume a {
@@ -290,6 +293,7 @@ h1 {
 #footer #socialMediaLinks>li:hover {
     color: white;
     cursor: pointer;
+    box-shadow: #d00000 0px -17px 0 -10px inset;
 }
 
 #footer #socialMediaLinks>li>a {
@@ -301,7 +305,7 @@ h1 {
 	font-size: inherit;
 }
 
-#footer #svg1 {
+#footer img {
 	height: 1em;
 	vertical-align: top;
 }
