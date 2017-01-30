@@ -1,0 +1,16 @@
+<thead>
+	<tr>
+		<th class="col-xs-3">Title</th>
+		<th class="col-xs-7">Notes</th>
+		<th class="col-xs-1">Restore</th>
+		<th class="col-xs-1">Delete</th>
+	</tr>
+</thead>
+<tbody>
+	<tr ng-repeat="movie in movies | filter: {watched:1} | orderBy:'title'">
+		<td>{{movie.title}}</td>
+		<td>{{movie.notes}}</td>
+		<td><button class="btn btn-success" ng-click="toggleWatched(movie.id, movie.watched)"><i class="fa fa-check"></i></button></td>
+		<td><button class="btn btn-danger" ng-click="deleteMovie(movie.id)"><i class="fa fa-trash-o"></i></button></td>
+	</tr>
+</tbody>

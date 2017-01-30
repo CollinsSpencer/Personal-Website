@@ -1,0 +1,77 @@
+.done-true {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.priorityHead {
+	background-color: #eee;
+}
+
+#main {
+	padding: 15px;
+}
+
+.heading {
+    font-family: 'Oswald', Arial, Sans-serif;
+    font-weight: bold;
+    color: #d00000;
+    text-transform: uppercase;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 0;
+    font-size: 70px;
+    line-height: 65px;
+    letter-spacing: -1px;
+}
+
+.priorityList {
+    list-style-type:none;
+    margin:0 auto;
+    padding:0;
+}
+
+.priorityList li {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    position: relative;
+}
+
+.priorityList label, .priorityList input {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+}
+
+.priorityList input[type="radio"] {
+    opacity: 0.01;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+}
+
+.priorityList input[type="radio"]:checked + label, .Checked + label {
+    background: #ccc;
+}
+
+.priorityList label {
+    padding: 5px;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 90;
+}
+
+.priorityList label:hover {
+     background: #DDD;
+}
+
+#switchViews p {
+	margin: 0;
+}
+
