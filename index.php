@@ -108,6 +108,7 @@
           <div class="column col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
             <h2>Computer-Related Work Experience</h2>
             <p>In the summer of 2016, I had the opportunity to be a Software Developer Intern at Baldwin Hackett &amp; Meeks, Inc.  There, I worked on and helped create a python based code generator to simplify a repetitive code-creating process, while also helping minimize human errors.</p>
+            <p>This semester I am working as an intern for the Water for Food Raikes Design Studio Team. My responsibilities include creating and editing Angular 2 components to a website that will help connect producers to data that analyzes resource usage.</p>
             <h2>Run-down of Languages I've Worked With</h2>
             <p>My first experience with coding was in <b>Liberty Basics</b> from a Coding for Dummies book in elementary school.</p>
             <p>In middle school, I learned just enough of <b>Java</b> and <b>Python</b> to do all of the problems on CodingBat.com.</p>
@@ -219,7 +220,7 @@
 	  <div id="row">
 	    <ul id="socialMediaLinks">
 	      <li id="linkedIn">
-	        <a href="https://www.linkedin.com/in/spencer-c-71b23484">
+	        <a href="https://www.linkedin.com/in/spencer-collins">
 	          <span class="genericon genericon-linkedin-alt"></span>
 	        </a>
 	      </li>

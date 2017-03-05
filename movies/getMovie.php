@@ -7,7 +7,7 @@ if ($mysqli->connect_errno) {
 
 //$priority = $_GET['priority'];
 
-$query="SELECT id,title,notes,rating,priority,watched FROM movies"; /* WHERE `priority` = $priority */
+$query="SELECT id,title,notes,rating,priority,watched FROM movie"; /* WHERE `priority` = $priority */
 $result = $mysqli->query($query) or die($mysqli->error.__LINE__);
 
 

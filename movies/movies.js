@@ -38,6 +38,10 @@ angular.module('movieListApp', [])
 				}
 			};
 			
+			$scope.edit = function(movieID){
+				
+			}
+			
 			$scope.templates = [
                     {name: 'toWatch', url: 'toWatch.html', switchModeLink: 'Watched Movies', title: 'Movies To Watch'},
                     {name: 'haveWatched', url: 'haveWatched.html', switchModeLink: 'Movies To Watch', title: 'Watched Movies'}
