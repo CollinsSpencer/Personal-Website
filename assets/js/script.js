@@ -9,14 +9,14 @@ $(document).ready(function(){
 	    	var item = $($(this).attr("href"));
 	    	if (item.length) { return item; }
 	    });
-	
+
 	function open(){
 		$("#bars").css("display", "none");
 		$("#collapse").css("display", "inline-block");
 		menu.addClass("show");
 		menuOpen = true;
 	}
-    
+
     function close(){
 		$("#bars").css("display", "inline-block");
 		$("#collapse").css("display", "none");
@@ -31,17 +31,17 @@ $(document).ready(function(){
 				if ($(this).offset().top < fromTop+150)
 					return this;
 			});
-		
+
 		var current = scrolledPast[scrolledPast.length-1];
 		var id = current && current.length ? current.attr("id") : "";
-		   
+
 		if(lastId !== id){
 			lastId = id;
 			menuItems
 			.parent().removeClass("active")
 			.end().filter("[href='#"+id+"']").parent().addClass("active");
 		}
-		
+
 		if(fromTop > $(window).height()){
 			$("#banner").addClass("sticky");
 			$("#banner").attr("style", "position: fixed");
@@ -50,19 +50,19 @@ $(document).ready(function(){
 			$("#banner").attr("style", "position: absolute");
 		}
 	}
-    
+
 	menuItems.click(function(event){
 	  	if(menuOpen){
 	  		close();
 	  	}
 		var href = $(this).attr("href"),
 	  		offsetTop = href === "#" ? 0 : $(href).offset().top - $("#banner").outerHeight();
-  		$('html, body').stop().animate({ 
+  		$('html, body').stop().animate({
   			scrollTop: offsetTop
   		}, 300);
   		event.preventDefault();
 	});
-	
+
 	menuButton.click(function(event){
 		if(menuOpen){
 			close();
@@ -70,11 +70,11 @@ $(document).ready(function(){
 			open();
 		}
 	});
-	
+
 	scrollEffects();
-	
+
 	$(window).scroll(scrollEffects);
-	
+
 	$("#submit").click(function(){
 		var firstName = $("#firstName").val();
 		var lastName = $("#lastName").val();
@@ -89,7 +89,7 @@ $(document).ready(function(){
 			// AJAX Code To Submit Form.
 			$.ajax({
 				type: "post",
-				url: "contact.php",
+				url: "/server/contact.php",
 				data: dataString,
 				cache: false,
 				success: function(){

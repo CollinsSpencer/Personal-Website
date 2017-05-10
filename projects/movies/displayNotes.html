@@ -1,0 +1,28 @@
+<md-dialog aria-label="This is the real title">
+	<form ng-cloak class="displayForm" name="displayForm" novalidate ng-submit="cancel()">
+	    <md-toolbar>
+	        <div class="md-toolbar-tools">
+	            <h2>Notes on {{title}}</h2>
+	            <span flex></span>
+	            <md-button class="md-fab fab-overlay-down" aria-label="Add more notes" ng-click="edit($event, id, title, notes, rating, priority, watched)">
+				    <i class="fa fa-plus"></i>
+				</md-button>
+	        </div>
+	    </md-toolbar>
+	    
+	    <md-dialog-content style="min-height: 100px">
+		    <div ng-if="notes">
+		    	{{notes}}
+		    </div>
+		    <div ng-if="!notes" style="float: right; margin-right: 19px">
+		    	Add a new note! <i class="fa fa-level-up"></i>
+		    </div>
+	    </md-dialog-content>
+	    
+	    <md-dialog-actions>
+		    <div>
+		        <md-button type="submit" class="md-primary">DONE</md-button>
+		    </div>
+	    </md-dialog-actions>
+	</form>
+</md-dialog>

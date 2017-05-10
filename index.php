@@ -3,11 +3,11 @@
 
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="/assets/resources/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
 <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" type="text/css" href="genericons/genericons.css">
-<script src="jquery-3.1.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="/assets/resources/genericons/genericons.css">
+<script src="/assets/js/jquery-3.1.1.min.js"></script>
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <title>Spencer Collins</title>
@@ -22,12 +22,12 @@
       </div>
     </div>
   </header>
-  
+
   <div id="content" class="mainComponent">
     <!-- BANNER -->
     <section id="bannerSection">
       <div id="banner" class="container">
-        <a href=""><img id="bannerName" alt="Spencer Collins" src="SpencerCollinsSignature.png"><img id="bannerInitials" alt="SC" src="SC.png"></a>
+        <a href=""><img id="bannerName" alt="Spencer Collins" src="/assets/resources/SpencerCollinsSignature.png"><img id="bannerInitials" alt="SC" src="/assets/resources/SC.png"></a>
         <div id="menu">
           <span id="bars" class="genericon genericon-menu"></span>
           <span id="collapse" style="display: none" class="genericon genericon-collapse"></span>
@@ -41,13 +41,13 @@
         </ul>
       </div>
     </section>
-    
+
     <!-- ABOUT ME -->
     <section id="aboutme">
       <div class="dark container-fluid">
         <div class="row top">
           <div class="column col-sm-5 text-right-sm roundImageCol">
-            <div id="profilePicture" class="roundImage"><img src="Spencer007(666x1000).jpg"></div>
+            <div id="profilePicture" class="roundImage"><img src="/assets/resources/Spencer007(666x1000).jpg"></div>
           </div>
           <div class="column col-sm-7 text-left-sm text250">
             <p>This is me. I'm Spencer Collins.&nbsp;</p>
@@ -58,7 +58,7 @@
         <div class="container">
           <div class="row">
             <div class="column col-sm-5 text-left-sm roundImageCol image-right">
-              <div class="roundImage"><img src="nebraska.svg"></div>
+              <div class="roundImage"><img src="/assets/resources/nebraska.svg"></div>
             </div>
             <div class="column col-sm-7 text-right-sm text250">
               <p>I am currently studying <strong>Software Engineering</strong> at the University of Nebraska-Lincoln through the <strong>Jeffrey S. Raikes School of Computer Science &amp; Management</strong>.</p>
@@ -69,7 +69,7 @@
       <div class="dark container-fluid">
         <div class="row">
           <div class="column col-sm-5 text-right-sm roundImageCol">
-            <div id="hikingPicture" class="roundImage"><img src="Hiking.jpg"></div>
+            <div id="hikingPicture" class="roundImage"><img src="/assets/resources/Hiking.jpg"></div>
           </div>
           <div class="column col-sm-7 text-left-sm text250">
             <p>I am an <strong>Eagle Scout</strong> and have a great love and appreciation for the outdoors.</p>
@@ -79,7 +79,7 @@
       <div class="dark container-fluid">
         <div class="row">
           <div class="column col-sm-5 text-left-sm roundImageCol image-right">
-            <div id="cmbPicture" class="roundImage"><img src="UNL_CMB.jpg"></div>
+            <div id="cmbPicture" class="roundImage"><img src="/assets/resources/UNL_CMB.jpg"></div>
           </div>
           <div class="column col-sm-7 text-right-sm text250">
             <p>I am a member of the <strong>Cornhusker Marching Band</strong> and <strong>Big Red Express Pep Band</strong>.</p>
@@ -89,7 +89,7 @@
       <div class="dark container-fluid bottom">
         <div class="row bottom">
           <div class="column col-sm-5 text-right-sm roundImageCol">
-            <div id="coltsPicture" class="roundImage"><img src="ColtsParade.jpg"></div>
+            <div id="coltsPicture" class="roundImage"><img src="/assets/resources/ColtsParade.jpg"></div>
           </div>
           <div class="column col-sm-7 text-left-sm text250">
             <p>I have also had the opportunity to march and play lead trumpet for the <strong>Colts Drum &amp; Bugle Corps</strong>.</p>
@@ -97,7 +97,7 @@
         </div>
       </div>
     </section>
-    
+
     <!-- EXPERIENCE -->
     <section id="experience">
       <div class="light container-fluid">
@@ -124,7 +124,7 @@
         </div>
       </div>
     </section>
-    
+
     <!-- RESUME -->
     <section id="resume">
       <div class="dark container-fluid">
@@ -133,17 +133,17 @@
         </div>
         <div class="row">
         	<div class="column col-sm-6 col-sm-offset-3 text-center" id="resumeImage">
-    	    	<img src="Spencer Collins Resume.png">
+    	    	<img src="/assets/resources/Spencer Collins Resume.png">
         	</div>
         </div>
         <div class="row right bottom">
           <div class="column col-sm-4 col-sm-offset-4 text-center">
-            <a href="Spencer Collins Resume.pdf" class="button"><span class="genericon genericon-print"></span>  Printable Version</a>
+            <a href="/assets/resources/Spencer Collins Resume.pdf" class="button"><span class="genericon genericon-print"></span>  Printable Version</a>
           </div>
         </div>
       </div>
     </section>
-    
+
     <!-- LOOKING FORWARD -->
     <section id="lookingForward">
       <div class="light container-fluid">
@@ -169,9 +169,9 @@
         </div>
       </div>
     </section>
-    
+
     <!-- CONTACT -->
-    <section id="contact">  
+    <section id="contact">
       <div class="darkish container-fluid">
         <div class="row bottom text-center">
           <h1 class="heading">Contact Me</h1>
@@ -210,7 +210,7 @@
       </div>
     </section>
   </div>
-  
+
   <div id="footer" class="dark mainComponent">
     <div class="container-fluid text-center">
 	  <div class="row top">
@@ -236,12 +236,12 @@
 	      </li>
 	      <li id="unl">
 	        <a href="http://cse.unl.edu/~scollins/">
-	          <img id="svg1" src="unl.svg" />
+	          <img id="svg1" src="/assets/resources/unl.svg" />
 	        </a>
 	      </li>
 	      <li id="meritpages">
 	        <a href="http://meritpages.com/CollinsSpencer">
-	          <img src="MeritPages.png" />
+	          <img src="/assets/resources/MeritPages.png" />
 	        </a>
 	      </li>
 	    </ul>
@@ -250,5 +250,5 @@
   </div>
 <body>
 
-<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="/assets/js/script.js"></script>
 </html>

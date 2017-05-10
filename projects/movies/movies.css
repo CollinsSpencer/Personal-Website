@@ -1,0 +1,226 @@
+html, body {
+    font-family: Roboto,Helvetica Neue,sans-serif;
+}
+
+.done-true {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.pad-rl {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.heading {
+    font-family: 'Oswald', Arial, Sans-serif;
+    font-weight: bold;
+/*     color: #d00000;*/
+    text-transform: uppercase;
+    width: 100%;
+    height: inherit;
+    margin-top: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 70px;
+    line-height: 65px;
+    letter-spacing: -1px;
+    background: light-grey;
+}
+
+.editForm md-dialog-content, .displayForm md-dialog-content {
+	padding: 30px 15px 0 15px;
+}
+
+.inputForm #addButton {
+	display: flex;
+}
+
+.inputForm #addButton md-input-container {
+	display: flex;
+    justify-content: center;
+}
+
+.inputForm md-input-container {
+	margin-top: 25px;
+	margin-bottom: 0;
+	width: 100%;
+}
+
+.inputForm #addButton md-input-container {
+	margin-top: 0;
+}
+
+.inputForm #addButton md-input-container button {
+	width: 90%;
+}
+
+.swipe-row {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+.swipe-top {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    border: none;
+    cursor: ew-resize;
+}
+
+.swipe-bottom {
+    float: right;
+    min-width: 100px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.swipe-bottom:hover {
+	cursor: pointer;
+}
+
+.notes {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.notes:hover {
+	color: #1e88e5; /*primary (blue) 600*/
+}
+
+.complete:hover {
+    background-color: #1e88e5 !important; /*primary (blue) 600*/
+}
+
+.edit:hover {
+	background-color: #546E7A !important; /*warn (blue-grey) 600*/
+}
+
+.delete:hover {
+    background-color: #D84315 !important; /*deep-orange 800*/
+}
+
+.entry {
+	position: absolute;
+}
+
+.entry i {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.right1 {
+	right: 0;
+}
+
+.border-top {
+	border-top: 1px solid rgb(200,200,200);
+}
+
+.border-bottom {
+	border-bottom: 1px solid rgb(200,200,200);
+}
+
+.fab-overlay-down {
+	position: absolute;
+	top: 50%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	height: 1em;
+}
+
+.testClass {float:left;}
+
+@media only screen and (max-width: 599px) {
+	.square {
+		height: 56px;
+		width: 56px;
+	}
+	
+	.right2 {
+		right: 56px;
+	}
+	
+	.right3 {
+		right: 112px;
+	}
+	
+	.swipe-row {
+		height: 56px;
+	}
+}
+
+@media only screen and (min-width: 600px) and (max-width: 959px) {
+	.testClass {float:none;}
+	
+	.square {
+		height: 45px;
+		width: 45px;
+	}
+	
+	.right2 {
+		right: 45px;
+	}
+	
+	.right3 {
+		right: 90px;
+	}
+	
+	.swipe-row {
+		height: 45px;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.testClass {float:right;}
+	
+	.square {
+		height: 34px;
+		width: 34px;
+	}
+	
+	.right2 {
+		right: 34px;
+	}
+	
+	.right3 {
+		right: 68px;
+	}
+	
+	.swipe-row {
+		height: 34px;
+	}
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari                      */
+    -webkit-user-select: none; /* Safari                          */
+     -khtml-user-select: none; /* Konqueror HTML                  */
+       -moz-user-select: none; /* Firefox                         */
+        -ms-user-select: none; /* Internet Explorer/Edge          */
+            user-select: none; /* Non-prefixed version, currently */
+                               /*   supported by Chrome and Opera */
+}
+
+.ui-draggable-handle {
+	-ms-touch-action: initial !important;
+	touch-action: initial !important
+}

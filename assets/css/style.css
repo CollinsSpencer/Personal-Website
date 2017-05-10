@@ -26,7 +26,7 @@ header {
 }
 
 #fixedHeader {
-	background: url(silhouette.jpg);
+	background: url(/assets/resources/silhouette.jpg);
     background-position: 100% 100%;
     background-repeat: no-repeat;
     background-color: transparent;
@@ -309,7 +309,7 @@ h1 {
 	height: 1em;
 	vertical-align: top;
 }
-	
+
 
 
 /* MEDIA SCREENS */
@@ -322,25 +322,25 @@ h1 {
     .image-right {
         float: right !important;
     }
-    
+
     .text250 {
         margin-top: 100px;
     }
-    
+
     .heading {
         font-size: 90px;
         line-height: 80px;
         letter-spacing: -2px;
     }
-    
+
     #banner ul {
         display: block;
     }
-    
+
     #banner ul.show {
 	    width: inherit;
 	}
-    
+
     #menu {
         display: none;
     }
@@ -348,15 +348,15 @@ h1 {
     #bannerName {
         display: block;
     }
-    
+
     #bannerInitials {
         display: none;
     }
-    
+
     .text-right-sm {
         text-align: right;
     }
-    
+
     .text-left-sm {
         text-align: left;
     }

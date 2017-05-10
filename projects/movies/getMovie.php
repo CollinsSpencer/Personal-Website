@@ -5,9 +5,7 @@ if ($mysqli->connect_errno) {
 	echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
 }
 
-//$priority = $_GET['priority'];
-
-$query="SELECT id,title,notes,rating,priority,watched FROM movie"; /* WHERE `priority` = $priority */
+$query="SELECT movieId,title,notes,rating,priority,watched FROM movie";
 $result = $mysqli->query($query) or die($mysqli->error.__LINE__);
 
 

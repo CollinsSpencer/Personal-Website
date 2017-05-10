@@ -21,7 +21,7 @@ if(isset($_GET['title']) && strlen($_GET['title'])>0){
 	}
 	$watched = "0";
 
-	$query="INSERT INTO movie(id,title,notes,rating,priority,watched)  VALUES (NULL, '$title', '$notes', NULL, '$priority', '$watched')";//(NULL, $title, $notes, $rating, $priority, $watched)";
+	$query="INSERT INTO movie(id,title,notes,rating,priority,watched)  VALUES (NULL, '$title', '$notes', 0, '$priority', '$watched')";//(NULL, $title, $notes, $rating, $priority, $watched)";
 	$data_reslt = $mysqli->query($query) or die($mysqli->error.__LINE__);
 
 	$data_reslt = $mysqli->affected_rows;

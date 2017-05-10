@@ -1,0 +1,55 @@
+<md-dialog aria-label="This is the real title">
+	<form class="editForm" name="editForm" ng-submit="update($event, id, title, notes, ratingObject.score, priority, watched)" novalidate>
+	    <md-toolbar>
+	        <div class="md-toolbar-tools">
+	            <h2>Edit {{fixedTitle}}</h2>
+	            <span flex></span>
+	            <md-button class="md-icon-button" aria-label="x" ng-click="cancel()">
+	              <i class="fa fa-times"></i>
+	            </md-button>
+	        </div>
+	    </md-toolbar>
+	    
+	    <md-dialog-content>
+		    <md-input-container class="md-block">
+		        <input name="title" placeholder="Title" data-ng-model="title"/>
+		    </md-input-container>
+		    
+		    <md-input-container class="md-block">
+		        <input name="notes" placeholder="Notes" data-ng-model="notes"/>
+		    </md-input-container>
+		    
+		    <md-input-container class="md-block">
+		        <label>Priority</label>
+		        <md-select ng-model="priority">
+		            <md-option ng-repeat="priorityOption in priorities" value="{{priorityOption.value}}">{{priorityOption.name}}</md-option>
+		        </md-select>
+		    </md-input-container>
+		    
+		    <md-input-container class="md-block">
+		        <md-checkbox name="watched" ng-model="watched" ng-true-value="'1'" ng-false-value="'0'" required>
+	          		Watched
+		        </md-checkbox>
+		        <div ng-messages="editForm.watched.$error" multiple md-auto-hide="false">
+		            <div ng-message="required">
+		            	In order to rate a movie, you must have seen it first.
+		            </div>
+		        </div>
+		      </md-input-container>
+		      
+		      <md-input-container class="md-block" ng-if="watched != 0">
+		        <label>Rating</label>
+		        <md-select ng-model="ratingObject.score">
+		            <md-option ng-repeat="ratingOption in ratings" value="{{ratingOption.value}}">{{ratingOption.value}}</md-option>
+		        </md-select>
+		    </md-input-container>
+	    </md-dialog-content>
+	    
+	    <md-dialog-actions>
+		    <div>
+		        <md-button type="button" class="md-accent" ng-click="cancel()">cancel</md-button>
+		        <md-button type="submit" class="md-primary md-raised">save</md-button>
+		    </div>
+	    </md-dialog-actions>
+	</form>
+</md-dialog>

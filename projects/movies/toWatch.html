@@ -1,0 +1,25 @@
+<div ng-repeat="priority in priorities">
+	<div class="text-center" md-colors="{background: 'primary-500'}">{{priority.name}}</div>
+	<div class="border-top">
+		<div class="swipe-row border-bottom" ng-repeat="movie in movies | filter: {priority:priority.value,watched:0} | orderBy:'title'">
+			<div class="swipe-bottom" md-colors="{background: 'primary-50'}">
+				<div class="right3 entry square delete" md-colors="::{backgroundColor: 'accent-900'}" ng-click="deleteMovie(movie.id)">
+					<i class="fa fa-trash-o"></i>
+				</div>
+				<div class="right2 entry square edit" md-colors="{background: 'warn-500'}" ng-click="edit($event, movie.id, movie.title, movie.notes, movie.rating, movie.priority, movie.watched)">
+					<i class="fa fa-edit"></i>
+				</div>
+				<div class="right1 entry square complete" md-colors="{background: 'primary-500'}" ng-click="toggleWatched(movie.id, movie.watched)">
+					<i class="fa fa-check"></i>
+				</div>
+			</div>
+			<div class="swipe-top swipe ui-widget-content">
+				{{movie.title}}
+				<div class="notes square" ng-click="displayNotes($event, movie.id, movie.title, movie.notes, movie.rating, movie.priority, movie.watched)">
+				    <i class="fa fa-file-text"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
