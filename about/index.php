@@ -11,7 +11,8 @@
   <!-- NAV -->
   <?php $selected = "about"; require_once "../nav.php" ?>
 
-  <div>
+  <!-- MAIN -->
+  <div style="height: 2000px">
     <h1>Hello World!<h1>
   </div>
 
