@@ -1,0 +1,62 @@
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.horizontal-2 {
+  flex-direction: row;
+}
+.horizontal-2 > article {
+  width: 50%;
+}
+
+.horizontal-3 {
+  flex-direction: row;
+}
+.horizontal-3 > article {
+  width: Calc(100%/3);
+}
+
+.horizontal-4 {
+  flex-direction: row;
+}
+.horizontal-4 > article {
+  width: 25%;
+}
+
+.horizontal-5 {
+  flex-direction: row;
+}
+.horizontal-5 > article {
+  width: 20%;
+}
+
+
+.vertical-2 {
+  flex-direction: column;
+}
+.vertical-2 > article {
+  height: 50%;
+}
+
+.vertical-3 {
+  flex-direction: column;
+}
+.vertical-3 > article {
+  height: Calc(100%/3);
+}
+
+.vertical-4 {
+  flex-direction: column;
+}
+.vertical-5 > article {
+  height: 25%;
+}
+
+.vertical-5 {
+  flex-direction: column;
+}
+.vertical-5 > article {
+  height: 20%;
+}
