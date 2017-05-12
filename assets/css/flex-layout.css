@@ -4,59 +4,66 @@
   justify-content: flex-start;
 }
 
-.horizontal-2 {
-  flex-direction: row;
-}
-.horizontal-2 > article {
-  width: 50%;
+.flex > article {
+  /*padding: 1em;*/
 }
 
-.horizontal-3 {
-  flex-direction: row;
-}
-.horizontal-3 > article {
-  width: Calc(100%/3);
-}
-
-.horizontal-4 {
-  flex-direction: row;
-}
-.horizontal-4 > article {
-  width: 25%;
-}
-
-.horizontal-5 {
-  flex-direction: row;
-}
-.horizontal-5 > article {
-  width: 20%;
-}
-
-
-.vertical-2 {
+.horizontal {
   flex-direction: column;
+}
+
+.vertical {
+  flex-direction: column;
+  height: 100%;
 }
 .vertical-2 > article {
   height: 50%;
 }
-
-.vertical-3 {
-  flex-direction: column;
-}
 .vertical-3 > article {
   height: Calc(100%/3);
 }
-
-.vertical-4 {
-  flex-direction: column;
-}
-.vertical-5 > article {
+.vertical-4 > article {
   height: 25%;
-}
-
-.vertical-5 {
-  flex-direction: column;
 }
 .vertical-5 > article {
   height: 20%;
+}
+
+
+/* MEDIA SCREENS */
+
+/* Extra small devices (phones, less than 600px) */
+/* No media query since this is the default */
+
+/* Small devices (tablets, 600px and up) */
+@media (min-width: 600px) {
+  .horizontal {
+    flex-direction: row;
+    width: 100%;
+  }
+  .horizontal-2 > article {
+    width: 50%;
+  }
+  .horizontal-3 > article {
+    width: Calc(100%/3);
+  }
+}
+
+/* Medium devices (desktops, 960px and up) */
+@media (min-width: 960px) {
+  .horizontal-4 > article {
+    width: 25%;
+  }
+  .horizontal-5 > article {
+    width: 20%;
+  }
+}
+
+/* Large devices (large desktops, 1280px and up) */
+@media (min-width: 1280px) {
+
+}
+
+@-ms-viewport{
+    width: device-width;
 }
