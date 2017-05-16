@@ -1,8 +1,7 @@
 nav {
-  background-color: #555;
+  background-color: #112244;
   height: 3em;
   font-family: 'Roboto Mono', sans;
-  font-size: 15px;
 
   display: flex;
   justify-content: center;
@@ -19,7 +18,7 @@ nav > * {
   height: 2em;
   line-height: 2em;
   text-align: center;
-  margin: 0 1em;
+  margin: 0 0.5em;
 }
 
 nav a.text {
@@ -84,5 +83,5 @@ nav img {
 
 /* First body element after the nav */
 nav + * {
-  padding-top: 54px;
+  padding-top: 3em;
 }
