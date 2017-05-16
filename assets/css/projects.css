@@ -1,0 +1,8 @@
+a.linked-card {
+  color: white;
+  height: 10em;
+}
+
+a.linked-card:hover, a.linked-card:focus {
+  background-color: rgba(17, 34, 68, 0.9);
+}

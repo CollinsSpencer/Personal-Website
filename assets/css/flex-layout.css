@@ -16,6 +16,10 @@
   flex-direction: column;
 }
 
+.horizontal > * {
+  width: 100%;
+}
+
 /*.horizontal-2-sm > * {
   width: 50%;
 }
@@ -43,6 +47,10 @@
 
 .vertical, .vertical-2, .vertical-3, .vertical-4, .vertical-5 {
   flex-direction: column;
+}
+
+.vertical > * {
+  height: 100%;
 }
 
 .vertical-2 > * {
@@ -88,7 +96,21 @@ a.linked-card {
   align-items: center;
   color: inherit;
   text-decoration: none;
+
+  background-color: #112244;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
+
+a.linked-card:hover, a.linked-card:focus {
+  -moz-transition-duration: 100ms;
+  -o-transition-duration: 100ms;
+  -webkit-transition-duration: 100ms;
+  transition-duration: 100ms;
+}
+
 
 a.linked-card > .genericon {
   font-size: 2em;
