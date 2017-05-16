@@ -5,3 +5,49 @@ input {
 textarea {
   width: 100%;
 }
+
+#contact-cards {
+  color: white;
+}
+
+.linked-card {
+  background-color: #112244;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.linked-card:hover, .linked-card:focus {
+  -moz-transition-duration: 100ms;
+  -o-transition-duration: 100ms;
+  -webkit-transition-duration: 100ms;
+  transition-duration: 100ms;
+}
+
+.linked-card#linkedIn:hover {
+  color: #0077b5;
+  background-color: #333;
+}
+
+.linked-card#gitHub:hover {
+  color: rgba(255,255,255,0.75);;
+  background-color: #24292e;
+}
+
+.linked-card#youtube:hover {
+  color: #cd201f;
+  background-color: white;
+}
+
+.linked-card#unl:hover {
+  background-color: #fefdfa;
+  /*border: 1px solid #5b5b5a;*/
+}
+.linked-card#unl:hover > svg > path {
+  fill: #d00000 !important;
+}
+
+.linked-card#meritpages:hover {
+  background-color: #24a6b2;
+}

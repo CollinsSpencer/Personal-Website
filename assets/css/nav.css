@@ -1,5 +1,5 @@
 nav {
-  background-color: #555;
+  background-color: #112244;
   height: 3em;
   font-family: 'Roboto Mono', sans;
 
@@ -18,7 +18,7 @@ nav > * {
   height: 2em;
   line-height: 2em;
   text-align: center;
-  margin: 0 1em;
+  margin: 0 0.5em;
 }
 
 nav a.text {

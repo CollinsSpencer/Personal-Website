@@ -13,7 +13,11 @@
 
   <!-- MAIN -->
   <div style="height: 2000px">
-    <h1>Hello World!<h1>
+    <h1>Hello World!</h1>
+    <section class="horizontal horizontal-2 flex">
+      <article class="card" style="min-height:50px;background-color:red">aaa</article>
+      <article class="card" style="min-height:50px;background-color:green">bbb</article>
+    </section>
   </div>
 
   <section>
