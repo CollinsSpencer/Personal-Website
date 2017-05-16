@@ -11,13 +11,13 @@
   <!-- NAV -->
   <?php $selected = "projects"; require_once "../nav.php" ?>
 
-  <div style="height: 2000px">
-    <h1>Hello World!<h1>
+  <div id="main" class="centered">
+    <section class="horizontal flex">
+      <a href="/projects/movies/" class="card linked-card">
+        <span class="inline-link-white">Movies</span>
+      </a>
+    </section>
   </div>
-
-  <section>
-    <a href="/about/">About</a>
-  </section>
 <body>
 
 <?php require_once "../server/footer.php"; ?>
